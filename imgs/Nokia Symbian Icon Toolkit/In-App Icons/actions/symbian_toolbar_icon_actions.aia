@@ -1,0 +1,431 @@
+/version 2
+/name [ 21
+	746f6f6c6261725f69636f6e735f616374696f6e73
+]
+/isOpen 1
+/actionCount 2
+/action-1 {
+	/name [ 12
+		6c6967687420736861646f77
+	]
+	/keyIndex 0
+	/colorIndex 0
+	/isOpen 0
+	/eventCount 8
+	/event-1 {
+		/internalName (ai_make_compound_shape)
+		/localizedName [ 31
+			5a7573616d6d656e67657365747a746520466f726d2065727374656c6c656e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1835101029
+			/showInPalette -1
+			/type (integer)
+			/value 0
+		}
+	}
+	/event-2 {
+		/internalName (ai_expand_compound_shape)
+		/localizedName [ 31
+			5a7573616d6d656e67657365747a746520466f726d20756d77616e64656c6e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 2020634212
+			/showInPalette -1
+			/type (integer)
+			/value 0
+		}
+	}
+	/event-3 {
+		/internalName (ai_plugin_setColor)
+		/localizedName [ 16
+			46617262652065696e7374656c6c656e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 6
+		/parameter-1 {
+			/key 1768186740
+			/showInPalette -1
+			/type (ustring)
+			/value [ 13
+				466cc3a46368656e6661726265
+			]
+		}
+		/parameter-2 {
+			/key 1718185068
+			/showInPalette -1
+			/type (boolean)
+			/value 1
+		}
+		/parameter-3 {
+			/key 1954115685
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 9
+				5247422d4661726265
+			]
+			/value 2
+		}
+		/parameter-4 {
+			/key 1919247406
+			/showInPalette -1
+			/type (real)
+			/value 255.0
+		}
+		/parameter-5 {
+			/key 1735550318
+			/showInPalette -1
+			/type (real)
+			/value 255.0
+		}
+		/parameter-6 {
+			/key 1651275109
+			/showInPalette -1
+			/type (real)
+			/value 255.0
+		}
+	}
+	/event-4 {
+		/internalName (adobe_copy)
+		/localizedName [ 8
+			4b6f70696572656e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+	/event-5 {
+		/internalName (adobe_pasteInBack)
+		/localizedName [ 18
+			446168696e7465722065696e66c3bc67656e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+	/event-6 {
+		/internalName (ai_plugin_offset)
+		/localizedName [ 16
+			5066616420766572736368696562656e
+		]
+		/isOpen 1
+		/isOn 1
+		/hasDialog 1
+		/showDialog 0
+		/parameterCount 3
+		/parameter-1 {
+			/key 1868985204
+			/showInPalette -1
+			/type (unit real)
+			/value 1.0
+			/unit 592476268
+		}
+		/parameter-2 {
+			/key 1835627634
+			/showInPalette -1
+			/type (real)
+			/value 4.0
+		}
+		/parameter-3 {
+			/key 1785623664
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 17
+				4162676572756e64657465204b616e7465
+			]
+			/value 0
+		}
+	}
+	/event-7 {
+		/internalName (ai_plugin_setColor)
+		/localizedName [ 16
+			46617262652065696e7374656c6c656e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 6
+		/parameter-1 {
+			/key 1768186740
+			/showInPalette -1
+			/type (ustring)
+			/value [ 13
+				466cc3a46368656e6661726265
+			]
+		}
+		/parameter-2 {
+			/key 1718185068
+			/showInPalette -1
+			/type (boolean)
+			/value 1
+		}
+		/parameter-3 {
+			/key 1954115685
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 9
+				5247422d4661726265
+			]
+			/value 2
+		}
+		/parameter-4 {
+			/key 1919247406
+			/showInPalette -1
+			/type (real)
+			/value 0.0
+		}
+		/parameter-5 {
+			/key 1735550318
+			/showInPalette -1
+			/type (real)
+			/value 0.0
+		}
+		/parameter-6 {
+			/key 1651275109
+			/showInPalette -1
+			/type (real)
+			/value 0.0
+		}
+	}
+	/event-8 {
+		/internalName (ai_plugin_transparency)
+		/localizedName [ 11
+			5472616e73706172656e7a
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1869635939
+			/showInPalette -1
+			/type (unit real)
+			/value 15.0000009537
+			/unit 592474723
+		}
+	}
+}
+/action-2 {
+	/name [ 11
+		6461726b20736861646f77
+	]
+	/keyIndex 0
+	/colorIndex 0
+	/isOpen 0
+	/eventCount 10
+	/event-1 {
+		/internalName (adobe_copy)
+		/localizedName [ 8
+			4b6f70696572656e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+	/event-2 {
+		/internalName (adobe_pasteInFront)
+		/localizedName [ 15
+			4461766f722065696e66c3bc67656e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+	/event-3 {
+		/internalName (adobe_sendToBack)
+		/localizedName [ 18
+			496e2064656e2048696e7465726772756e64
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+	/event-4 {
+		/internalName (ai_compound_shape)
+		/localizedName [ 21
+			5a7573616d6d656e67657365747a746520466f726d
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 2
+		/parameter-1 {
+			/key 1851878757
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 11
+				48696e7a7566c3bc67656e
+			]
+			/value 0
+		}
+		/parameter-2 {
+			/key 1836016741
+			/showInPalette -1
+			/type (integer)
+			/value 0
+		}
+	}
+	/event-5 {
+		/internalName (ai_expand_compound_shape)
+		/localizedName [ 31
+			5a7573616d6d656e67657365747a746520466f726d20756d77616e64656c6e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 2020634212
+			/showInPalette -1
+			/type (integer)
+			/value 0
+		}
+	}
+	/event-6 {
+		/internalName (ai_plugin_setColor)
+		/localizedName [ 16
+			46617262652065696e7374656c6c656e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 6
+		/parameter-1 {
+			/key 1768186740
+			/showInPalette -1
+			/type (ustring)
+			/value [ 13
+				466cc3a46368656e6661726265
+			]
+		}
+		/parameter-2 {
+			/key 1718185068
+			/showInPalette -1
+			/type (boolean)
+			/value 1
+		}
+		/parameter-3 {
+			/key 1954115685
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 9
+				5247422d4661726265
+			]
+			/value 2
+		}
+		/parameter-4 {
+			/key 1919247406
+			/showInPalette -1
+			/type (real)
+			/value 0.0
+		}
+		/parameter-5 {
+			/key 1735550318
+			/showInPalette -1
+			/type (real)
+			/value 0.0
+		}
+		/parameter-6 {
+			/key 1651275109
+			/showInPalette -1
+			/type (real)
+			/value 0.0
+		}
+	}
+	/event-7 {
+		/internalName (ai_plugin_transparency)
+		/localizedName [ 11
+			5472616e73706172656e7a
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1869635939
+			/showInPalette -1
+			/type (unit real)
+			/value 40.0
+			/unit 592474723
+		}
+	}
+	/event-8 {
+		/internalName (adobe_move)
+		/localizedName [ 11
+			566572736368696562656e
+		]
+		/isOpen 1
+		/isOn 1
+		/hasDialog 1
+		/showDialog 0
+		/parameterCount 3
+		/parameter-1 {
+			/key 1752136302
+			/showInPalette -1
+			/type (unit real)
+			/value 0.0
+			/unit 592476268
+		}
+		/parameter-2 {
+			/key 1987339116
+			/showInPalette -1
+			/type (unit real)
+			/value 1.0
+			/unit 592476268
+		}
+		/parameter-3 {
+			/key 1668247673
+			/showInPalette -1
+			/type (boolean)
+			/value 0
+		}
+	}
+	/event-9 {
+		/internalName (ai_plugin_transparency)
+		/localizedName [ 11
+			5472616e73706172656e7a
+		]
+		/isOpen 1
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1869635939
+			/showInPalette -1
+			/type (unit real)
+			/value 30.0000019073
+			/unit 592474723
+		}
+	}
+	/event-10 {
+		/internalName (ai_expand_compound_shape)
+		/localizedName [ 31
+			5a7573616d6d656e67657365747a746520466f726d20756d77616e64656c6e
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 2020634212
+			/showInPalette -1
+			/type (integer)
+			/value 0
+		}
+	}
+}

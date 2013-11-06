@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+      
+  	     <entity>
+  	     	<url>http://stores.bestbuy.com/281/</url>	
+  	     	<name>semanticweb.rdf</name>
+  	     </entity>
+
+  	     <entity>
+  	     	<url>http://localhost/swc/web-server/local/</url>	
+  	     	<name>richsnippetgenerator.htm</name>
+  	     </entity>
+
+
+  	     <entity>
+  	     	<url>http://localhost/swc/web-server/local/</url>	
+  	     	<name>bestbuy.rdf</name>
+  	     </entity>
+
+  	    <entity>
+  	     	<url>http://localhost/swc/web-server/local/</url>	
+  	     	<name>semanticweb1.rdf</name>
+  	     </entity>
+
+  	     <entity>
+  	     	<url>http://localhost/swc/web-server/local/</url>	
+  	     	<name>semanticweb2.rdf</name>
+  	     </entity>
+
+  	     <entity>
+  	     	<url>http://localhost/swc/web-server/local/</url>	
+  	     	<name>semanticweb3.rdf</name>
+  	     </entity>
+
+</catalog>

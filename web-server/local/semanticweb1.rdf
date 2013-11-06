@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<rdf:RDF xml:base="http://localhost/swc/web-server/local/semanticweb1.rdf" 
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:gr="http://purl.org/goodrelations/v1#" 
+ xmlns:rv="http://www.wifo-ravensburg.de/rdf/semanticweb.rdf#" 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+ xmlns:vcard="http://www.w3.org/2006/vcard/ns#" 
+ xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+>
+  <gr:Location rdf:about="#store">
+  
+	<vcard:org>
+		<vcard:organization>
+			<vcard:organization-name>7 Perla</vcard:organization-name>
+		</vcard:organization>
+	</vcard:org>
+	
+   <rdfs:comment xml:lang="de">Smile Center</rdfs:comment>
+   <vcard:adr>
+    <vcard:Address>
+     <vcard:country-name xml:lang="de">Deutschland</vcard:country-name>
+     <vcard:locality xml:lang="de">Ravensburg</vcard:locality>
+     <vcard:postal-code xml:lang="de">88213</vcard:postal-code>
+     <vcard:street-address xml:lang="de">Meersburger Str. 3</vcard:street-address>
+    </vcard:Address>
+   </vcard:adr>
+   
+	<vcard:geo>
+		<vcard:location>  
+			<vcard:latitude>19.719646</vcard:latitude>
+			<vcard:longitude>-103.46289</vcard:longitude>
+		</vcard:location>
+	</vcard:geo>
+   
+   <vcard:tel xml:lang="de">+49-751-3526021</vcard:tel>
+   <vcard:email xml:lang="de">info@wasserbetten-sueddeutschland.de</vcard:email>
+   <foaf:homepage rdf:resource="http://www.wasserbetten-sueddeutschland.de"/>
+   <rv:kategorie  xml:lang="de">Handel</rv:kategorie>
+   <rv:subkategorie  xml:lang="de">Betten</rv:subkategorie>
+   <rv:rv_geschenkgutschein rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rv:rv_geschenkgutschein>
+   <rv:rv_macht_sinn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rv:rv_macht_sinn>
+   <rv:wifo_member rdf:datatype="xsd:boolean">false</rv:wifo_member>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+	   <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Sunday"/>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Monday"/>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Tuesday"/>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Wednesday"/>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Thursday"/>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Friday"/>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Saturday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">06:30:00</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:30:00</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+		<gr:validFrom></gr:validFrom>
+		<gr:validThrough></gr:validThrough>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Monday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:30:00</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">12:30:00</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+	 	<gr:validFrom>2008-05-30T09:30:10Z.</gr:validFrom>
+		<gr:validThrough>2008-06-30T09:30:10Z.</gr:validThrough>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Tuesday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">14:00:00</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:00:00</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+		<gr:validThrough>2011-07-30T09:30:10Z.</gr:validThrough>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Wednesday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:59:59</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:59:59</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Wednesday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">14:00:00</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:00:00</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+	 	<gr:validFrom>2011-05-30T09:30:10Z.</gr:validFrom>
+		<gr:validThrough>2011-06-30T23:30:10Z.</gr:validThrough>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Thursday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:30:00</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">12:30:00</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Thursday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">14:00:00</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:00:00</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Friday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:30:00</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">12:30:00</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Friday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">14:00:00</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:00:00</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+   <gr:hasOpeningHoursSpecification>
+     <gr:OpeningHoursSpecification>
+       <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Saturday"/>
+       <gr:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:30:00</gr:opens>
+       <gr:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#time">16:00:00</gr:closes>
+     </gr:OpeningHoursSpecification>
+   </gr:hasOpeningHoursSpecification>
+  </gr:Location>
+</rdf:RDF>

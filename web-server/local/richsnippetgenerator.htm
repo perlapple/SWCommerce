@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html version="HTML+RDFa 1.1" lang="de">
+
+<div xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:gr="http://purl.org/goodrelations/v1#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+
+  <div typeof="gr:BusinessEntity" about="#company">
+    <div property="gr:legalName" content="Aceros De Colima S.A. De C.V."></div>
+    <div property="rdfs:subkategorie" content="Aceros De Colima S.A. De C.V."></div>
+    <div property="rdfs:kategorie" content="Aceros De Colima S.A. De C.V."></div>
+    <div rel="vcard:adr">
+      <div typeof="vcard:Address">
+        <div property="vcard:country-name" content="México"></div>
+        <div property="vcard:locality" content="Colima"></div>
+        <div property="vcard:postal-code" content="28050"></div>
+        <div property="vcard:street-address" content="Independencia 412"></div>
+      </div>
+    </div>
+    <div rel="foaf:logo" resource="../../images/page1pic1.png"></div>
+    <div rel="foaf:page" resource=""></div>
+  </div>
+
+
+  <div typeof="gr:Location" about="#store">
+    <div rev="gr:hasPOS" resource="#company"></div>
+    <div property="gr:name" content="Aceros De Colima S.A. De C.V."></div>
+    <div property="rdfs:comment" content="Distrubución de productos de acero y materiales de contrucción."></div>
+    <div property="vcard:tel" content="01 312 314 0763"></div>
+    <div rel="vcard:adr">
+      <div typeof="vcard:Address">
+        <div property="vcard:country-name" content="México"></div>
+        <div property="vcard:locality" content="Colima"></div>
+        <div property="vcard:postal-code" content="28050"></div>
+        <div property="vcard:street-address" content="Independencia 412"></div>
+      </div>
+    </div>
+    <div rel="foaf:logo" resource="../../images/logo_aceros.png"></div>
+    <div rel="vcard:geo">
+      <div>
+        <div property="vcard:latitude" content="19.247373" datatype="xsd:float"></div>
+        <div property="vcard:longitude" content="-103.735701" datatype="xsd:float"></div>
+      </div>
+    </div>
+    <div rel="gr:hasOpeningHoursSpecification">
+      <div typeof="gr:OpeningHoursSpecification" about="#mon_fri">
+        <div property="gr:opens" content="09:00:00" datatype="xsd:time"></div>
+        <div property="gr:closes" content="15:30:00" datatype="xsd:time"></div>
+        <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Monday"></div>
+        <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Tuesday"></div>
+        <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Wednesday"></div>
+        <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Thursday"></div>
+        <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Friday"></div>
+      </div>
+    </div>
+    <div rel="gr:hasOpeningHoursSpecification">
+      <div typeof="gr:OpeningHoursSpecification" about="#sat">
+        <div property="gr:opens" content="15:30:00" datatype="xsd:time"></div>
+        <div property="gr:closes" content="17:00:00" datatype="xsd:time"></div>
+        <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Saturday"></div>
+      </div>
+    </div>
+    <div rel="gr:hasOpeningHoursSpecification">
+      <div typeof="gr:OpeningHoursSpecification" about="#sun">
+        <div property="gr:opens" content="18:00:00" datatype="xsd:time"></div>
+        <div property="gr:closes" content="23:00:00" datatype="xsd:time"></div>
+        <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Sunday"></div>
+      </div>
+    </div>
+    <div rel="foaf:page" resource=""></div>
+  </div>
+
+    <div typeof="gr:Offering" about="#offering1">
+        <div rel="gr:availableAtOrFrom" resource="#store"></div>	
+        <div rev="gr:offers" resource="#company"></div>
+        <div property="gr:name" content="Cemento" xml:lang="de"></div>
+        <div property="rdfs:comment" content="Cemento marca cruz azul CPC 30 R RS, Mortero y Blanco- 1 pieza"></div>
+
+        <div rel="gr:hasBusinessFunction" resource="http://purl.org/goodrelations/v1#Sell"></div>
+        <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#Cash"></div>
+        <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#PayPal"></div>
+         <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#Cash"></div>
+
+         <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#AmericanExpress"></div>
+         <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#DinersClub"></div>
+         <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#Discover"></div>
+         <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#MasterCard"></div>
+         <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#VISA"></div>
+
+        <div rel="gr:availableDeliveryMethods" resource="http://purl.org/goodrelations/v1#DeliveryModePickUp"></div>
+        <div rel="gr:eligibleCustomerTypes" resource="http://purl.org/goodrelations/v1#Enduser"></div>
+        <div rel="gr:includes">
+          <div typeof="gr:SomeItems" about="#product2">
+            <div property="gr:name" content="Barilla" xml:lang="de"></div>
+          </div>
+        </div>
+      	<div rel="gr:hasPriceSpecification">
+      		<div typeof="gr:UnitPriceSpecification">
+      			<div property="gr:hasCurrency" content="PESOS" datatype="xsd:string"></div>
+      			<div property="gr:hasCurrencyValue" content="100.34" datatype="xsd:float"></div>
+      		</div>
+      	</div>
+        <div rel="foaf:logo" resource="../../images/logo_aceros.png"></div>
+
+    </div>
+
+
+    <div typeof="gr:Offering" about="#offering3">
+        <div rel="gr:availableAtOrFrom" resource="#store"></div>  
+        <div rev="gr:offers" resource="#company"></div>
+        <div property="gr:name" content="PVC" xml:lang="de"></div>
+        <div property="rdfs:comment" content=" Tubo PVC Eco. 75mm, 6ML, 1 Pieza "></div>
+
+        <div rel="gr:hasBusinessFunction" resource="http://purl.org/goodrelations/v1#Sell"></div>
+        <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#Cash"></div>
+        <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#PayPal"></div>
+        <div rel="gr:availableDeliveryMethods" resource="http://purl.org/goodrelations/v1#DeliveryModePickUp"></div>
+        <div rel="gr:eligibleCustomerTypes" resource="http://purl.org/goodrelations/v1#Enduser"></div>
+        <div rel="gr:includes">
+          <div typeof="gr:SomeItems" about="#product2">
+            <div property="gr:name" content="Barilla" xml:lang="de"></div>
+          </div>
+        </div>
+        <div rel="gr:hasPriceSpecification">
+          <div typeof="gr:UnitPriceSpecification">
+            <div property="gr:hasCurrency" content="PESOS" datatype="xsd:string"></div>
+            <div property="gr:hasCurrencyValue" content="29.44" datatype="xsd:float"></div>
+          </div>
+        </div>
+    </div>
+
+    <div typeof="gr:Offering" about="#offering4">
+        <div rel="gr:availableAtOrFrom" resource="#store"></div>  
+        <div rev="gr:offers" resource="#company"></div>
+        <div property="gr:name" content="Vigueta" xml:lang="de"></div>
+        <div property="rdfs:comment" content="Vigueta de Acero Piramidal RYD 1.20 - Lamina Galvanizada del fabricante Losa RYD  "></div>
+
+        <div rel="gr:hasBusinessFunction" resource="http://purl.org/goodrelations/v1#Sell"></div>
+        <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#Cash"></div>
+        <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#PayPal"></div>
+        <div rel="gr:availableDeliveryMethods" resource="http://purl.org/goodrelations/v1#DeliveryModePickUp"></div>
+        <div rel="gr:eligibleCustomerTypes" resource="http://purl.org/goodrelations/v1#Enduser"></div>
+        <div rel="gr:includes">
+          <div typeof="gr:SomeItems" about="#product2">
+            <div property="gr:name" content="Barilla" xml:lang="de"></div>
+          </div>
+        </div>
+        <div rel="gr:hasPriceSpecification">
+          <div typeof="gr:UnitPriceSpecification">
+            <div property="gr:hasCurrency" content="PESOS" datatype="xsd:string"></div>
+            <div property="gr:hasCurrencyValue" content="150.77" datatype="xsd:float"></div>
+          </div>
+        </div>
+    </div>
+
+    <div typeof="gr:Offering" about="#offering5">
+        <div rel="gr:availableAtOrFrom" resource="#store"></div>  
+        <div rev="gr:offers" resource="#company"></div>
+        <div property="gr:name" content="Pegamento" xml:lang="de"></div>
+        <div property="rdfs:comment" content="Pegamento Cemento PVC -150 GR del fabricante Siler  "></div>
+
+        <div rel="gr:hasBusinessFunction" resource="http://purl.org/goodrelations/v1#Sell"></div>
+        <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#Cash"></div>
+        <div rel="gr:acceptedPaymentMethods" resource="http://purl.org/goodrelations/v1#PayPal"></div>
+        <div rel="gr:availableDeliveryMethods" resource="http://purl.org/goodrelations/v1#DeliveryModePickUp"></div>
+        <div rel="gr:eligibleCustomerTypes" resource="http://purl.org/goodrelations/v1#Enduser"></div>
+        <div rel="gr:includes">
+          <div typeof="gr:SomeItems" about="#product2">
+            <div property="gr:name" content="Barilla" xml:lang="de"></div>
+          </div>
+        </div>
+        <div rel="gr:hasPriceSpecification">
+          <div typeof="gr:UnitPriceSpecification">
+            <div property="gr:hasCurrency" content="PESOS" datatype="xsd:string"></div>
+            <div property="gr:hasCurrencyValue" content="150.77" datatype="xsd:float"></div>
+          </div>
+        </div>
+    </div>
+    
+
+
+</div>
+
+</html>

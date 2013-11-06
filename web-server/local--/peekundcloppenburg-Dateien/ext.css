@@ -1,0 +1,669 @@
+/* import css from bt */
+
+@import url(style.css);
+
+/* override/extend specific styles: */
+
+	#disclaimer {
+		clear:left;
+		background-image:url(../img/disclaimer_back.gif);
+		background-repeat: repeat-x;
+		}
+
+	#disclaimer p {
+		padding-top: 6px;
+		font-size:11px;
+		color:#ffffff;
+		text-align:center;
+		}
+
+	*+html #disclaimer p {
+		margin-top: 0px;
+		font-size:11px;
+		color:#ffffff;
+		text-align:center;
+		}
+
+	#disclaimer a {
+		color:#ffffff;
+		text-decoration:underline;
+		}
+
+/* override/copy for multiple picswitch boxes (rb_textpic) .. */
+
+	.visual_2 {
+		overflow:hidden;
+		margin:0px 0px 0px 0px;
+		width:225px;
+		height:325px;
+		float:left;
+		}
+
+	.picswitchbox {
+		overflow:hidden;
+		margin:0px;
+		width:227px;
+		height:305px;
+		border-bottom: 1px solid #c7c7c7;
+		}
+
+	* html .picswitchbox {
+		overflow:hidden;
+		margin:0px;
+		width:227px;
+		height:305px;
+		border-bottom: 1px solid #c7c7c7;
+		}
+
+	.visual_footer {
+		font-size:9px;
+		text-align:center;
+		border-bottom: 1px solid #c7c7c7;
+		margin: 0px;
+		width: 247px;
+		height: 16px;
+		}
+
+	.visual_desc {
+		font-size:9px;
+		text-align:center;
+		margin: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		width: 227px;
+		/* width: 225px; */
+		background: #ffffff;
+		position: absolute;
+		bottom:0px;
+		}
+	.visual_desc div {
+		font-size:10px;
+		}
+	.countnumber {
+		font-size:11px;
+		}
+
+/* now special styles for the rb_textpic */
+
+	.textpic_text {
+		float:left;
+		overflow: auto;
+		border-bottom: 1px solid #c7c7c7;
+		border-top: 1px solid #c7c7c7;
+		width:424px;
+		height: 320px;
+		font-size:11px;
+		color:#43444F;
+		padding:0px 15px 0px 15px;
+		margin-left:2px;
+		}
+
+	* html .textpic_text {  /* IE Overide */
+		width:454px;
+		}
+
+	.textpic_text_newsletter {
+		float:left;
+		overflow: auto;
+		border-bottom: 1px solid #c7c7c7;
+		border-top: 1px solid #c7c7c7;
+		width:424px;
+		height:320px;
+		font-size:11px;
+		color:#43444F;
+		padding:0px 15px 0px 15px;
+		margin-left:2px;
+		}
+
+	*+html .textpic_text_newsletter {
+		float:left;
+		overflow: auto;
+		border-top:0px;
+		border-bottom:0px;
+		background-image:url(../img/newsletter_content_back.gif);
+		background-repeat: none;
+		width:424px;
+		height:322px;
+		font-size:11px;
+		color:#43444F;
+		padding:0px 15px 0px 15px;
+		margin-left:2px;
+		}
+
+	* html .textpic_text_newsletter {  /* IE Overide */
+		width:454px;
+		}
+
+	.textpic_text_kontakt {
+		float:left;
+		overflow: auto;
+		border-bottom: 1px solid #c7c7c7;
+		border-top: 1px solid #c7c7c7;
+		width:424px;
+		height:320px;
+		font-size:11px;
+		color:#43444F;
+		padding:0px 15px 0px 15px;
+		margin-left:2px;
+		}
+
+	*+html .textpic_text_kontakt {
+		float:left;
+		overflow: auto;
+		border-top:0px;
+		border-bottom:0px;
+		background-image:url(../img/newsletter_content_back.gif);
+		background-repeat: none;
+		width:424px;
+		height:322px;
+		font-size:11px;
+		color:#43444F;
+		padding:0px 15px 0px 15px;
+		margin-left:1px;
+		}
+
+	* html .textpic_text_kontakt {  /* IE Overide */
+		width:454px;
+		}
+
+	.textpic_text_both {
+		width:364px;
+	}
+
+	* html .textpic_text_both {  /* IE Overide */
+		width:394px;
+		}
+
+	.textpic_text_right {
+		float:left;
+		overflow:auto;
+		width:207px;
+		height: 322px;
+		font-size:11px;
+		background:#c7c7c7;
+		color:#43444F;
+		padding:0px 10px 0px 10px;
+		margin-left:2px;
+		}
+
+	* html .textpic_text_right {  /* IE Overide */
+		width:227px;
+		}
+
+	.textpic_text h1 {
+		margin-top:15px;
+		}
+
+	.textpic_text a {
+		color:#8B2425;
+		text-decoration:none;
+		}
+	
+	.textpic_text img {
+		border:none;
+	}
+
+/*** plugin: rb_records ***/
+
+	.box_big {
+		float:left;
+		overflow:auto;
+		width:681px;
+		height: 322px;
+		font-size:11px;
+		background:#ffffff;
+		color:#43444F;
+		padding:1px 0px 0px 0px;
+		margin-left:2px;
+		border-top: solid 1px #c7c7c7;
+		border-bottom: solid 1px #c7c7c7;
+		}
+
+	.box_big a {
+		color:#8B2425;
+		text-decoration:none;
+		}
+
+	.partner
+		{
+		width:664px;
+		height: 230px;
+		float: left;
+		background-image: url(../img/u_und_e_back.gif);
+		}
+
+	*+html .partner /* IE 7 Hack */
+		{
+		width:664px;
+		float: left;
+		background-image: url(../img/u_und_e_back.gif);
+		}
+
+	.partner_pic
+		{
+		float: left;
+		width:225px;
+		padding:0px 0px 0px 0px;
+		}
+
+	.partner_textbox
+		{
+		float: left;
+		width:400px;
+		padding: 10px 0 10px 10px;
+		}
+
+	.partner_headline
+		{
+		font-weight:bold;
+		}
+	.partner_text
+		{
+		}
+	.partner_link
+		{
+		padding:5px 0 0 0;
+		}
+	.partnerend
+		{
+		clear:both;
+		height:1px;
+		background:#fff;
+		}
+
+	/** rb_records: faq mode **/
+
+	.textpic_text_nopad {
+		padding:0px;
+		width:454px;
+	}
+
+	* html .textpic_text_nopad {  /* IE Overide */
+		width:454px;
+		}
+
+	.textpic_text_nopad_events {
+		padding:0px;
+		width:454px;
+		height:321px;
+		}
+
+	* html .textpic_text_nopad_events {  /* IE Overide */
+		width:454px;
+		height:321px;
+		}
+
+	#faq
+		{
+		position:absolute;
+		width:450px;
+		height:78px;
+		top:0px;
+		margin-top:0;
+		margin-left:0px;
+		margin-right:1px;
+		font-size:11px;
+		background:#ffffff;
+		color:#43444F;
+		padding-top:7px;
+		padding-left:15px;
+		float: left;
+		}
+	* html #faq
+		{
+		  height:85px;
+		}
+	#faq h1
+		{
+		  padding : 0px 0px 8px 0px;
+		  margin : 0px;
+		}
+	#faq form
+		{
+		  padding : 5px 0px 0px 0px;
+		  margin : 0px;
+		}
+	#faqSelectDiv
+		{
+		height: 78px;
+		padding-left: 15px;
+		padding-top: 15px;
+		}
+
+	#faqSelectDiv select {
+		margin-top: 4px;
+		background-color:#c7c7c7;
+		border:1px solid #c7c7c7;
+		width: 180px;
+		}
+
+	#faqSelectDiv h1
+		{
+		padding: 0px;
+		margin: 0px 0px 8px 0px;
+		}
+
+	#frage
+		{
+		overflow:auto;
+		width:424px;
+		height:178px;
+		margin-top:0px;
+		margin-left:0px;
+		margin-right:0px;
+		font-size:11px;
+		/* background:#D9D8D6; */
+		background-color: #ffffff;
+		color:#43444F;
+		border-bottom:1px solid #c7c7c7;
+		border-top:1px solid #c7c7c7;
+		padding:7px 15px 7px 15px;
+		}
+	* html #frage
+		{
+		  width:443px;
+		}
+	#faqSelect
+		{
+			margin-top: 8px;
+		}
+	#next
+		{
+		width:440px;
+		height:24px;
+		margin:0px;
+		font-size:11px;
+		background:#ffffff;
+		color:#43444F;
+		}
+
+	#next_back {
+		float: left;
+		width: 170px;
+		padding: 7px 0 0 0;
+		margin-left : 15px;
+		}
+
+	#next_links {
+		float: left;
+		color: #1A315F;
+		padding: 5px 0 0 0;
+		margin-left : 20px;
+		}
+
+	#next_rechts {
+		float: right;
+		padding: 7px 0 0 0;
+		margin-right : 3px;
+		}
+
+
+/*** rbmp_history  ***/
+
+
+	#impressions
+	{
+		overflow: auto;
+		width: 442px !important;
+		width: 441px;
+		height: 200px;
+		border-top: 0px;
+		float: left;
+	}
+
+	.impressions_td {
+		  padding-right:2px;
+		  padding-top:1px;
+		}
+
+
+	#jahr
+		{
+		width: 238px !important;
+		width: 237px;
+		height:200px;
+		border:1px solid #fff !important;
+		border-bottom: 0px;
+		border: 0px;
+		overflow: auto;
+
+		}
+	#jahr h1 {
+		  padding : 15px 0 0 15px;
+		  margin : 0;
+		  font-size : 11px;
+		}
+	#jahr b {
+		  font-weight : bold;
+		  font-size : 10px;
+		}
+	#jahr p {
+		  padding : 15px;
+		  margin : 0;
+		  font-size : 10px;
+		}
+
+	#bildunterschrift {
+		border-bottom: 1px solid #c7c7c7;
+		float: left;
+		width: 442px;
+		height: 35px;
+		margin-left:0;
+		padding-top:7px;
+		text-align: center;
+		}
+
+	*+html #bildunterschrift { /* IE 7 Hack */
+		border-bottom: 1px solid #c7c7c7;
+		float: left;
+		width: 442px;
+		height: 25px;
+		margin-left:0;
+		padding-top:7px;
+		text-align: center;
+		}
+
+	#imp_next {
+		float: left;
+		border-bottom: 1px solid #c7c7c7;
+		width: 229px !important;
+		width: 239px;
+		height: 32px;
+		padding-top:10px;
+		padding-right:10px;
+		xtext-align : right;
+		}
+
+	*+html #imp_next { /* IE 7 Hack */
+		float: left;
+		border-bottom: 1px solid #c7c7c7;
+		width: 229px;
+		height: 22px;
+		padding-top:10px;
+		padding-right:10px;
+		xtext-align : right;
+		}
+
+	#imp_next .h_left {
+		float: left;
+		margin-left: 10px;
+		}
+
+	#imp_next .h_right {
+		float: right;
+		}
+
+/* boutique clubbing */
+
+	table.appointments  {
+		border-collapse: collapse;
+		border-spacing: 0px;
+		border-top: 1px solid #c7c7c7;
+	}
+
+	table.appointments td, table.appointments th {
+		padding: 2px 6px 3px 6px;
+		border-top: 1px solid #c7c7c7;
+		xborder-left: 1px solid #c7c7c7;
+		border-right: 1px solid #c7c7c7;
+		border-collapse: collapse;
+	}
+	table.appointments td.nw {
+		white-space: nowrap;
+		vertical-align: top;
+	}
+
+	table.appointments th {
+		font-weight: bold;
+		text-align: left;
+	}
+
+/* SITEMAP */
+	#sitemap_headline {
+	  background:#ffffff;
+	  padding: 14px 0 10px 0px;
+	  font-weight : bold;
+	  font-size : 13px;
+	  line-height: 1.5;
+	}
+	#sitemap a {
+	  color : black;
+	}
+
+	#sitemap a:hover {
+	  text-decoration: underline;
+	}
+
+	#sitemap ul.headline {
+	  width : 155px;
+	  min-width : 155px;
+	  float : left;
+	  list-style-type : none;
+	  padding : 0 0 0 0;
+	  margin : 0;
+	  line-height: 1.5;
+	}
+
+	#sitemap ul.item {
+	  list-style-type : none;
+	  padding : 0 0 0 1px;
+	  margin : 0;
+	  line-height: 1.5;
+	}
+	#sitemap ul.subitem {
+	  list-style-type : none;
+	  padding : 0 0 0 1px;
+	  margin : 0;
+	  line-height: 1.5;
+	}
+
+	#sitemap .sitemap_headline {
+	  font-weight : bold;
+	  font-size : 13px;
+	}
+	#sitemap .sitemap_item {
+	  padding : 3px 0 0 0;
+	  font-weight : normal;
+	}
+	#sitemap .sitemap_subitem {
+	  padding : 3px 0 0 0;
+	  font-weight : normal;
+	}
+
+	#microsites {
+		clear: both;
+
+		margin-top: 240px;
+	}
+
+	.textpic_text_full {
+		width:825px;
+	}
+
+	* html .textpic_text_full {  /* IE Overide */
+		width:845px;
+		}
+
+/*** pbcl_standorte_pi1 */
+
+	.map {
+		overflow:hidden;
+		position: relative;
+		margin:0px;
+		width:226px;
+		height:322px;
+		float:left;
+	}
+
+	.standortSelektor {
+		//margin-top: -6px;
+	}
+
+	#locationTeaser {
+		position: relative;
+		height: 322px;
+		width: 226px;
+		margin-right:2px;
+		float: left;
+		background: #ffffff;
+	}
+
+	#locationTeaserClose {
+		position:absolute;
+		right:4px;
+		top:4px;
+	}
+
+	#locationTeaserText {
+		position:absolute;
+		top:280px;
+		left:15px;
+	}
+	#locationTeaserText a {
+		color:#990000;
+	}
+
+
+	#locationTeaser img {
+		border: 0px;
+		cursor: pointer;
+	}
+
+/*** override for only one picture .. ***/
+
+.picswitchbox_onepic {
+	height: 321px;
+	border-bottom: 1px solid #C7C7C7;
+	border-top: 1px solid #C7C7C7;
+}
+
+
+* html .picswitchbox_onepic {
+	height: 323px;
+}
+
+.picswitchbox_onepic_no_navi {
+	height: 321px;
+	border-bottom: 1px solid #C7C7C7;
+}
+
+*+html .picswitchbox_onepic_no_navi {
+	height: 321px;
+	width: 225px;
+	border-bottom: 1px solid #FFFFFF !important;
+}
+
+
+
+
+/********* BELOW: old includes! merge manually as neccessary ******/
+
+/* import css from michael */
+
+/* @import url(mp.css); */
+/* @import url(overrides_old.css); */
+
+
+
+
+

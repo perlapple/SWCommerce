@@ -1,0 +1,163 @@
+.clear {
+	clear: left;
+	margin:0px;
+	padding:0px;
+}
+.tx_tipafriend {
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+}
+.tx_tipafriend form {
+	margin: 0px;
+}
+.tx_tipafriend .tx_tipafriend_url {
+	margin-bottom: 20px;
+}
+
+.tx_tipafriend_tiplink {
+
+}
+
+.tx_tipafriend_url H1 {
+	
+}
+.tx_tipafriend_path_label {
+	margin-right:5px;
+	font-weight:bold;
+	float:left;
+}
+.tx_tipafriend_path_url {
+	font-weight:normal;
+	font-style:normal;
+	float:left;
+}
+.tx_tipafriend_error_box {
+	background-color:#E0E0E0;
+	border-style:solid;
+	border-width:1px;
+	border-color:#000000;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:10px;
+	margin-left:0px;
+	padding-top:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	font-weight:bold;
+	color:red;
+}
+.tx_tipafriend_error_header {
+	color: #FF0000;
+	font-weight: bold;
+	text-align: left;
+	margin: 0px 0px 5px 0px;
+}
+.tx_tipafriend_error_text {
+	color: #FF0000;
+	font-weight: normal;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+}
+.tx_tipafriend_formfield {
+	padding-top:5px;
+	padding-right:0px;
+	padding-bottom:5px;
+	padding-left:0px;
+	clear:left;
+}
+.tx_tipafriend_formfield LABEL {
+	font-weight:bold;
+	text-align:right;
+	width:200px;
+	margin-right:5px;
+	float:left;
+}
+.tx_tipafriend_html, #tx_tipafriend_html {
+	/*display:none;*/
+}
+#tx_tipafriend_html {
+	border-style: none;
+	border-width: 0px;
+	background-color: #FFFFFF;
+	width: auto;
+	float: left;
+}
+.tx_tipafriend_formfield INPUT, .tx_tipafriend_formfield TEXTAREA {
+	width:200px;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	color:#000000;
+	margin-left:0px;
+	padding-left:0px;
+	float:left;
+}
+.tx_tipafriend_formfield INPUT:focus, .tx_tipafriend_formfield TEXTAREA:focus {
+	background-color:#E0E0E0;
+}
+.tx_tipafriend_codetext .tx-srfreecap-pi2-image {
+	width:200px;
+	height:74px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+.tx_tipafriend_codetext {
+	text-align:justify;
+	font-size:10px;
+	line-height:normal;
+	border-color:black;
+	border-style:solid;
+	border-width:0px;
+	background-color:white;
+	width:200px;
+	color:#000000;
+	font-weight:normal;
+	margin:0px 0px 0px 0px;
+	float:left;
+}
+.tx_tipafriend_text {
+	text-align:justify;
+	font-size:10px;
+	line-height:normal;
+	border-color:#CCCCCC;
+	border-style:none;
+	border-width:1px;
+	background-color:white;
+	width:200px;
+	margin:15px 0px 0px;
+	float:left;
+}
+#tx_tipafriend_button {
+	width:200px;
+	background-color:#E0E0E0;
+	border-color:black;
+	border-style:solid;
+	border-width:1px;
+	text-align:center;
+	font-weight:bold;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	padding-top:3px;
+	padding-right:0px;
+	padding-bottom:3px;
+	padding-left:0px;
+	float:left;
+}
+.tx_tipafriend_werbemail {
+	text-align:justify;
+	font-size:10px;
+	line-height:normal;
+	border-color:#CCCCCC;
+	border-style:none;
+	border-width:1px;
+	background-color:white;
+	width:200px;
+	margin:0px 0px 30px 0px;
+	float:left;
+}

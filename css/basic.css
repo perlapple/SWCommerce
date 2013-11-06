@@ -1,0 +1,71 @@
+/*
+ * Add your Stylesheet contents here
+ */
+
+.ui-icon-perla-map {
+	background-image: url("images/map2.png");
+}
+
+.logBox {
+	font-family: 'Courier New', Courier, monospace;
+	margin: 4px;
+	font-size: smaller;
+}
+
+.ui-icon-ci-list {
+	background-image: url(libs/images/custom-list-18-white.png);
+	background-repeat: no-repeat;
+}
+.ui-icon-map-list {
+	background-image: url(libs/images/custom-list-18-black.png);
+	background-repeat: no-repeat;
+}
+
+.ui-icon-ci-map {
+	background-image: url(libs/images/custom-map-18-white.png);
+	background-repeat: no-repeat;
+}
+
+
+.ui-li-desc {
+	text-align: justify !important;
+	white-space: normal !important;
+}
+
+.resultItemFiltered {
+	display: none !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.ui-icon-ci-list {
+		background-image: url(libs/images/custom-list-36-white.png);
+		background-repeat: no-repeat;
+		background-size: 18px 18px;
+	}
+	.ui-icon-ci-map {
+		background-image: url(libs/images/custom-map-36-white.png);
+		background-repeat: no-repeat;
+		background-size: 18px 18px;
+	}
+}
+
+h3 {
+	margin: 0px 0px 0.5em;
+}
+
+.mapImage {
+	width: 99%;
+}
+
+#Details li span {
+	font-weight: normal;
+}
+
+.centered {
+	text-align: center;
+}
+
+ #AroundContentResultsMap {
+ 	margin-bottom: 1em;	
+ }
+

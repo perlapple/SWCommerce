@@ -1,0 +1,339 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWCommerce</title>
+
+      
+    <link rel="stylesheet" href="libs/jquery.mobile-1.0b1.min.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="jquery.mobile-1.3.1.css" />
+    <script src="libs/jquery-1.6.2.min.js"></script>
+    <script src="libs/icanhaz.min.js"></script>
+    <script src="libs/basic.js"></script>
+
+    <!-- <script src="libs/jquery.mobile-1.0b1.min.js"></script>-->
+
+   <script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+
+
+
+
+  <style>.panel-content { padding:15px; }  
+.containing-element .ui-slider-switch { width: 9em }
+
+   </style>
+
+    <style>
+
+.ui-icon-map-list {
+  background-image: url("images/detalles.png");
+  background-repeat: no-repeat;
+}
+.ui-icon-perla-map {
+  background-image: url("images/map2.png");
+}
+
+  #coffeeicon .ui-icon-custom {
+  background-image: url("Clock_vectoricon.png");
+  background-position: 2px 2px;
+  background-size: 90%; }
+
+</style>
+
+  </head>
+  <body>
+
+     <div id="Start" data-url="Start" data-role="page">
+
+      <div data-role="header" data-backbtn="false">
+        <a href="#Start" data-role="button" data-icon="home" data-iconpos="notext">Home</a>  
+<!--         <h1>Semantic Local Scout 2</h1>
+ -->      </div>
+        
+      
+         <div data-role="content">
+        <script type="text/javascript">
+            javascript:void(0);
+            geoGetLatLng();
+           //$.mobile.changePage("#ResultList");
+            window.location.replace("#ResultList");
+        </script>
+      </div>
+    </div>
+
+    <!-- Search-Page: Instead of his real location, the user can search via Street Name, etc... -->
+    <!-- TODO: make do anything -->   
+    <div id="Search" data-url="Search" data-role="page">
+      <div data-role="header" data-backbtn="false">
+<!--         <h1>Semantic Local Scout 2</h1>
+ -->      </div>
+        
+      <div data-role="content">
+        <form onsubmit="javascript: startAddressSearch(); return false;">
+        <div data-role="fieldcontain">
+        
+        </div>
+        </form>
+        <br>
+      </div>
+      
+    </div>
+
+
+    
+    <!-- Result-Map-Page: The app shows all not filteres venues on the map -->
+
+    <div id="ResultMap" data-url="ResultMap" data-role="page">
+      <div data-role="header" data-backbtn="false">
+       <div data-role="controlgroup"> 
+        <a class="ui-block-c" id="ResultListFooterButton2" data-role="button" data-iconpos="left" data-theme="a" href="#ResultList" data-icon="back" data-mini="true">Atras</a> 
+      </div>
+      </div>
+      
+      <div data-role="content">
+        <ul data-role="listview" id="ResultMapTopContainer" style="text-align: center;"></ul>
+      </div>
+    </div>
+
+
+
+    <!-- Result-List-Page: The app lists all venues and allows him to filter it -->
+    <!-- TODO: make it really work -->    
+    <div id="ResultList" data-url="ResultList" data-role="page">
+      <div data-role="header" data-backbtn="false">
+        <div data-role="controlgroup">
+        <a class="ui-block-c" id="ResultListFooterButton2" data-role="button" data-iconpos="left" data-theme="a" href="#Search" data-icon="back" data-mini="true">Atras</a> 
+
+          <a class="ui-block-a" id="ResultListFooterButton1" data-role="button" data-iconpos="left" data-theme="a" href="javascript:void(0)" data-icon="search" data-mini="true">Filtros</a>
+          <a class="ui-block-c" id="ResultListFooterButton2" data-role="button" data-iconpos="left" data-theme="a" href="#ResultMap" data-icon="perla-map" data-mini="true">Mapa</a>  
+
+          
+      </div>
+     <!--  <h1>Semantic Local Scout 4</h1> -->
+      </div>
+
+    
+      <div data-role="content">
+         <ul id="ResultListTopContainer" style="position:absolute; width:100%;" data-role="listview" data-count-theme = "h" ></ul>
+         <ul id="ResultListResultsList" style="margin: 15px -15px -15px; position:absolute; width:100%;" data-theme="d" data-filter="true" data-filter-theme="h" data-role="listview" data-split-theme="d" data-count-theme = "d" data-split-icon="grid">
+        </ul>
+        <div id="ResultListFilter" data-role="fieldcontain" data-theme="a"  style="display: none; margin: -20px 27px; float: right;">
+        <div style="height:250px;width:200px;float:left;"  >
+         
+              <a href="javascript:cerrar(0)" data-iconpos="right" data-theme="a"  style="margin: -35px 0px; float: right;"  data-role="button" data-icon="delete" >Filtros&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+              <input type="checkbox" name="filterOpen" id="checkbox-6a" class="filterItem" data-theme="c" data-mini="true"/>
+              <label for="checkbox-6a"> Abiertos</label>  
+
+              <input type="checkbox" name="filterClosed" id="checkbox-3a" class="filterItem" data-theme="c" data-mini="true"/>
+              <label for="checkbox-3a">Cerrados</label>
+    
+              <input type="checkbox" name="filterBarelyOpen" id="checkbox-4a" class="filterItem" data-theme="c" data-mini="true"/>
+              <label for="checkbox-4a">Por cerrar</label>
+              
+              <input type="checkbox" name="filterNoOpeningInformation" id="checkbox-5a" class="filterItem" data-theme="c"data-mini="true"/>
+              <label for="checkbox-5a">Sin horario</label>
+              <input type="checkbox" name="filterMaximumDistance" id="checkbox-2a" class="filterItem" data-theme="c" data-mini="true"/>
+              <label for="checkbox-2a">Distancia Máxima <span id="filerMaximumDistanceSpan" style="display: none; float: right; font-size: x-small;"></span></label>  
+
+          </div>
+                 
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- Details-Page:  -->
+    <!-- TODO: make more really work -->    
+    <div id="Details" data-url="Details" data-role="page">
+      <div data-role="header" data-backbtn="false">
+        <div data-role="controlgroup">
+        <a class="ui-block-c" id="ResultListFooterButton2" data-role="button" data-iconpos="left" data-theme="a" href="#ResultList" data-icon="back" data-mini="true">Atras</a> 
+          <a class="ui-block-a" id="ResultListMapaButton1" data-role="button" data-iconpos="left" data-theme="a" href="javascript:void(0)" data-icon="perla-map" data-mini="true">Mapa</a> 
+          <a class="ui-block-a" id="DetailsFooterButton1" data-role="button" data-iconpos="right" data-theme="a" href="javascript:void(0)" data-icon="arrow-l">Anterior</a>
+             <a class="ui-block-b" id="DetailsFooterButton3" data-role="button" data-iconpos="left" data-theme="a" href="javascript:void(0)" data-icon="arrow-r">Siguiente</a>
+        </div>
+        
+      </div>
+<!--       <h1>Semantic Local Scout 5</h1>
+ -->      
+      <div data-role="content" >
+   <!--         <div data-role="collapsible" data-collapsed="true" id="venueMore" style="margin: 1.4em 0px;">
+          <h3>Más</h3>  -->
+         <ul data-role="listview" id="venueTopContainer" style="text-align: center;" data-theme="b"></ul> <p></p>
+           <ul data-role="listview" style="data-theme=d"  id="venueMoreContainer" style="text-align: center;"></ul>
+        <div   data-collapsed-icon="perla-map" data-mini="true" data-collapsed="false"  id="venueOpeningHours" style="margin: 1.4em 0px;"  data-theme="a" data-content-theme="b">
+
+         <b style="font-size:14px;">Horario: <i style="font-weight: normal; font-family:arial;font-size:14px;"></i></b>
+
+          <ul data-role="listview"  data-inset="true" data-mini="true" id="venueOpeningHoursContainer" width="60" style="margin: 10px 300px 0px 10px;">
+          </ul> </br>
+
+        </div>
+
+          
+  
+</div>
+
+
+        </div> 
+<!--       </div>
+ -->    </div>
+
+    
+    <!-- Offerings-Page: Instead of his real location, the user can search via Street Name, etc... -->
+    <!-- TODO: make do anything -->   
+    <div id="Offerings" data-url="Offerings" data-role="page">
+             <div data-role="header" data-backbtn="false">
+        <div data-role="controlgroup">
+        <a class="ui-block-a" id="DetailsFooterButton1" data-role="button" data-iconpos="left" data-theme="a" href="#ResultList" data-icon="arrow-l">Lista de Comercios</a> 
+        <a class="ui-block-c" id="ResultListFooterButton2" data-role="button" data-iconpos="left" data-theme="a" href="#Details" data-icon="back" data-mini="true">Atras</a> 
+        </div>   
+        </div>
+      
+      <div data-role="content">
+        <ul data-role="listview" data-mini="true" id="offeringsContainer" style="margin: -15px -15px -15px;" data-filter-theme="h">
+        </ul>
+        
+      </div>
+      </div>
+    </div>
+
+
+
+  <!-- Templates for the Result-Page -->
+  
+  <script id="tmp_resultHeader" type="text/html">
+    <li data-role="list-divider" >
+    {{ text }}<span class="ui-li-count">{{ counter }}</span>
+     </li>
+  </script>
+
+    <script id="tmp_resultHeader2" type="text/html">
+    <li data-role="list-divider">  {{ text }}: {{ counter }} encontrados
+    
+    <span class="ui-li-count">{{ counter }}</span>
+     </li>
+  </script>
+
+
+  <script id="tmp_resultItem" type="text/html">
+  <li class="resultItem" >
+       <a href="javascript:void(0)">
+         <img src="./imgs/32x32-open-{{ code }}.png" class="ui-li-thumb" style="left: 6px; top: 6px;" width="80px" height="80px"/>
+         <h1>{{ listnumber }}. {{ name }} </h1>
+         <p> <strong>{{ direction }}, a {{ distance }} metros de distancia.</strong></p>
+         <p>{{ description }}. </p>
+       </a>
+    <a href="#" class="showRating" mID="2">Ver Detalles</a>
+  </li>
+  </script>
+
+         
+  <!-- <span class="ui-li-count" style="margin-top : -30px;">{{ distance }} Metros</span>-->
+  
+ 
+ <script id="tmp_resultOfferingMessage" type="text/html">
+    <div style="text-align: center; font-weight: bold; margin: 10%;" class="placeholder">{{ message }}</div>
+  </script>
+
+  
+    <style type="text/css">
+    #loading-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #000; opacity: 0.7; }
+    #loading-message { position: absolute; width: 400px; height: 100px; line-height: 100px; text-align: center; font-size: 1.2em; left: 50%; top: 50%; margin-left: -200px; margin-top: -50px; }
+  </style>
+
+    <script id="tmp_resultMessage" type="text/html">
+     <div style="text-align: center; font-weight: bold; margin: 10%; margin-top:700px;" class="placeholder"></div>
+    <div id="loading-overlay" ></div>
+    <div id="loading-message"><img src="./images/ajax-loader.gif"/>
+    <div style="text-align: center; font-weight: bold; " class="placeholder"></div>
+
+    </div>
+    </script>
+
+
+    <script id="tmp_resultMessage2" type="text/html">
+    <div style="text-align: center; font-weight: bold; margin: 10%; padding-bottom:400px;" class="placeholder">{{ message }}</div>
+  </script>
+
+
+  <!-- Templates for the Details-Page -->
+  
+  <script id="tmp_detailsTopHeader" type="text/html">
+9878  </script>
+
+  <script id="tmp_detailsTopMap2" type="text/html"> Mapa
+    <img id="mapaDetails" src="{{ imagesrc }}" width="{{ size }}" height="{{ size }}" alt="Detailed Map" />
+  </script>
+
+  <script id="tmp_detailsTopMap" type="text/html">
+    <img src="{{ imagesrc }}" width="{{ size }}" height="{{ size }}" alt="Detailed Map" />
+  </script>
+  <script id="tmp_detailsTopClickToActionButton" type="text/html">
+    <a href="" data-inline="true" data-role="button" data-theme="{{ theme }}"> {{ label }}</a>
+  </script> 
+
+  <script id="tmp_detailsTopClickToActionButton2" type="text/html">
+        <a href="" data-inline="true" data-role="button" data-theme="{{ theme }}"> {{ label }}</a>
+  </script> 
+
+
+  <script id="tmp_detailsTopPaymentMethods" type="text/html">
+    <img src="./imgs/32x32-{{ paymentmethod }}.png" width="60" height="50" alt="{{ paymentmethod }}" style="padding:0px 20px; 0px 0px;"/>
+  </script> 
+      
+  <script id="tmp_detailsInstantViewsWithLogo" type="text/html">
+    <li style="font-weight: normal; padding: 0.7em 15px 0.7em 90px; text-align: justify;"><img src="{{ imagesrc }}" alt="Logo"><div><b>{{ label }} </b>{{ text }}</div></li>
+  </script>
+  <script id="tmp_detailsInstantViewsNoLogo" type="text/html">
+    <li style="font-weight: normal; padding: 0.7em 15px; text-align: justify;"><b>{{ label }}</b> {{ text }}</li>
+  </script>
+  <script id="tmp_detailsInstantViewsOfferings" type="text/html">
+    <li data-theme="{{ theme }}" data-mini="true" ><a href="javascript:void(0)" data-mini="true"><b>{{ label }}: {{ count }} encontrados</b></a><span class="ui-li-count">{{ count }}</span></li>
+  </script>
+
+  <script id="tmp_detailsOpeningHoursDivider" type="text/html">
+    <li data-role="list-divider"> <img src="./imgs/{{ day }}.png" class="ui-li-icon" style="left: 6px; top: 6px;" width="20" height="20"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ day }}</li> hola
+  </script>
+  <script id="tmp_detailsOpeningHours" type="text/html">
+    <li><strong>Abre: </strong> {{ opens }}  <strong>Cierra: </strong>{{ closes }}</li>
+  </script>
+
+
+  
+  <script id="tmp_detailsOpeningHoursDivider2" type="text/html">
+    <li>
+         <img src="./imgs/{{ day }}.png" class="ui-li-thumb" style=""/>
+         <h1>{{ day }}: </h1>
+  </li>
+  </script>
+
+  <script id="tmp_detailsOpeningHours2" type="text/html">
+    <li>
+        <img src="./imgs/{{ day }}.png" class="ui-li-thumb" style=""/>
+         <h1>{{ day }}: </h1>
+         <p> <strong>Abre: </strong> {{ opens }} -- <strong>Cierra: </strong>{{ closes }} </p>
+  </li>
+  </script>
+
+
+
+ 
+
+
+
+  <script id="tmp_offeringsOffer" type="text/html">
+    <li data-theme="d" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div">
+      <h3>{{ label }}</h3>
+      <p>{{ text }}</p>
+      <p class="ui-li-aside"><strong>{{ price }}</strong></p>
+    </li>
+  </script>
+
+
+
+  </body>
+</html>

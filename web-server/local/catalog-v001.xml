@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+       
+        <uri id="Automatically generated entry, Timestamp=1371619369599" name="http://localhost/swc/web-server/local/bestbuy.rdf" uri="bestbuy.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1371619369599" name="http://localhost/swc/web-server/local/semanticweb2.rdf" uri="semanticweb.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1371619369599" name="http://localhost/swc/web-server/local/semanticweb2.rdf" uri="semanticweb1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1371619369599" name="http://localhost/swc/web-server/local/semanticweb2.rdf" uri="semanticweb2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1371619369599" name="http://localhost/swc/web-server/local/semanticweb3.rdf" uri="semanticweb3.rdf"/>
+  	     <uri id="Automatically generated entry, Timestamp=1371619369599" name="http://localhost/swc/web-server/local/richsnippetgenerator.htm" uri="richsnippetgenerator.htm"/>
+
+
+    </group>
+</catalog>
+
